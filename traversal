@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct node{
+int item;
+struct node*left;
+struct node*right;
+};
+void inorder(struct node*root){
+if(root==null)
+return;
+inorder(root->left)
