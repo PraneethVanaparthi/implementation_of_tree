@@ -8,4 +8,8 @@ struct node*right;
 void inorder(struct node*root){
 if(root==null)
 return;
-inorder(root->left)
+inorder(root->left);
+printf("%d",root->item);
+inorder(root->right);
+}
+void preorder(struct
