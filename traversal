@@ -12,4 +12,55 @@ inorder(root->left);
 printf("%d",root->item);
 inorder(root->right);
 }
-void preorder(struct
+void preorder(struct node*root){
+if(root==null){
+return;
+preorder(root->left);
+preorder(root->right)
+}
+//post order
+void postorder(struct node*root){
+if(root==Null)
+return ;
+postorder(root->left);
+postorder(root->right);
+printf("%d->",rooy->iteam);
+}
+//create a new node
+struct node*createNode(value){
+struct node*newnode=malloc(size of((struct node));
+new node->iteam=value;
+new node->Null;
+new node->right=Null;
+return new node;
+}
+struct node*insertleft(struct node*root,int value){
+root->left=createnode(value);
+return root->left;
+}
+struct node*insert right(struct node*root,int value){
+root->right=createnode(value);
+return root->right;
+}
+int main(){
+struct node*root= createnode(1);
+insert left(root,12);
+insert right(root,9);
+insert left(root->left,5);
+intert right(root->left,6);
+printf("inorder\n");
+inorder(root);
+printf("preorder\n");
+postorder(root);
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
